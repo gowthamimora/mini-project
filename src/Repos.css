@@ -1,0 +1,85 @@
+.rowClass1 {
+    background-color: #10253f;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 50;
+    width: 1110px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+form {
+    padding-left: 400px;
+}
+
+.btn {
+    background-color: navy;
+    border: #007bff;
+}
+
+.repoListTable {
+    table-layout: fixed;
+    border-radius: 10px;
+    background-color: deepskyblue;
+}
+
+
+
+.hd {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.columnChange {
+    margin-left: 100px;
+}
+
+.RepoBold {
+    font-weight: bold;
+    border-right: 2px solid darkseagreen;
+}
+
+.formControl {
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+.langStyle1 {
+    font-size: 13px;
+}
+
+span {
+    color: darkslateblue;
+}
+
+.col {
+    flex-grow: 0;
+}
+
+.imgLeft {
+    text-align: left !important;
+}
+
+.imgRepos1 {
+    background-color: dimgray;
+    max-width: 100%;
+    min-height: 620px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.renderRepos {
+    font-size: 10px;
+}
+
+.imgDisplay {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: lightblue;
+}
+
+.col-form-label {
+    padding-left: 110px;
+}

@@ -1,0 +1,59 @@
+.table td {
+    border-top: none !important;
+    padding: 0.75rem;
+
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 0 0 50%;
+    display: inline-flex;
+}
+
+.descArticle {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.descArticle:hover {
+    background-color: lightgoldenrodyellow;
+}
+.dropdown-item {
+    background-color: darkgrey;
+}
+
+.dropdown-item {
+    background-color: lavender;
+}
+
+.dropdown-item:hover {
+    background-color: aliceblue;
+}
+
+.dropdown-menu {
+    padding: 0rem;
+    mid-width: 11rem;
+    height: auto;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.table tr {
+    outline-color: red;
+}
+.tableAdjust {
+    width: 1110px;
+    padding-top: 84px;
+}
+
+.repoDetails {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.img {
+    border-radius: 5px;
+}
