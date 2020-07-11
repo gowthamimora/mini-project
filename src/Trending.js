@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Col, Row, Table} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import {isEmpty} from "lodash";
 import "./Trending.css";
 
@@ -38,7 +38,7 @@ class Trending extends React.Component{
                 const repoDownloadLink = `${repo.url}/archive/master.zip`;
                 return (
                     <article className="descArticle">
-                        <img className="img" height="100px" width="100px" src={repo.avatar}/>
+                        <img className="img" height="100px" width="100px" src={repo.avatar} alt="avatar"/>
                         <Col className="repoDetails">
                             <Row><td width='350px'><b><a target={"_blank"} href={repoDownloadLink}>{repo.name}</a></b></td></Row>
                             <Row><td width='350px'>Author- {repo.author}</td></Row>

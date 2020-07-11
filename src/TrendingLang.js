@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {isEmpty, reduce, extend} from "lodash"
-import { Button, Form, FormControl, FormGroup, FormLabel, Col, Row, Container, Table } from 'react-bootstrap';
+import { Button, Form,Col, Row, Container} from 'react-bootstrap';
 import './TrendingLang.css';
 
 function convertJSON(response) {
@@ -21,7 +21,7 @@ class TrendingLang extends React.Component {
         this.fetchReposAPI = this.fetchReposAPI.bind(this);
         this.saveUserRepos = this.saveUserRepos.bind(this);
         this.renderRepos = this.renderRepos.bind(this);
-        //this.renderPieChart = this.renderPieChart.bind(this);
+
         
 	}
 
@@ -48,11 +48,6 @@ class TrendingLang extends React.Component {
             //console.log(this.state.userRepoWithLang);
         });
 
-        /*this.setState(
-            {
-                userRepos: jsonResp,
-            }
-        );*/
     }
 
     fetchReposAPI() {
@@ -75,19 +70,6 @@ class TrendingLang extends React.Component {
         if(isEmpty(reposLang)) {
             return ""
         }
-
-        
-
-        function repoAndLang(key) {
-        	console.log(key);
-
-            return key.map(val => console.log(val));
-        }
-
-		/*function langValue(key1) {
-			console.log(key1);
-        	return 	<div>{Object.keys(langValue[key1]).map(val => <p>{val}</p>)}</div>
-        }*/
 
         return Object.keys(reposLang)//.map((key, val) => console.log(key, val));
         //return Object.keys(reposLang).map(repos => console.log(repos));

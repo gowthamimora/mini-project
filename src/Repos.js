@@ -3,7 +3,7 @@
 import React from 'react';
 
 import {isEmpty, reduce, extend, pickBy} from "lodash"
-import { Button, Form, FormControl, FormGroup, FormLabel, Col, Row, Container, Table,  Dropdown, DropdownButton} from 'react-bootstrap';
+import { Button, Form,Col, Row, Container, Table,  Dropdown, DropdownButton} from 'react-bootstrap';
 import './Repos.css';
 import Trending from "./Trending";
 
@@ -100,7 +100,7 @@ class Repos extends React.Component {
             <Row className="imgRepos1">
 
                 <Col className="imgLeft">
-                    {isEmpty(this.state.userRepos) ? "" : <img className="imgDisplay" src={isEmpty(this.state.userRepos) ? "" : this.state.userRepos[0].owner.avatar_url}/>}
+                    {isEmpty(this.state.userRepos) ? "" : <img  alt="avatar" className="imgDisplay" src={isEmpty(this.state.userRepos) ? "" : this.state.userRepos[0].owner.avatar_url}/>}
                     <h5 style={{textAlign:"center"}}>{isEmpty(this.state.userRepos) ? "" : this.state.userRepos[0].owner.login}</h5>
                 </Col>
                 <Col sm='7'>
